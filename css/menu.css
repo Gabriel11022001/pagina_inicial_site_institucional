@@ -1,0 +1,95 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 5%;
+    box-sizing: border-box;
+    background-color: #fff;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: solid 1px var(--textos);
+    box-shadow: 0 0 5px var(--textos);
+}
+.cabecalho__logo {
+    width: 120px;
+}
+.cabecalho__btn-controla-menu {
+    display: none;
+    border: none;
+    background: none;
+    color: var(--textos);
+    font-size: 25px;
+    cursor: pointer;
+}
+.cabecalho__menu__lista {
+    display: flex;
+    align-items: center;
+}
+.cabecalho__menu__lista__item {
+    margin-right: 25px;
+}
+.cabecalho__menu__lista__item:last-child {
+    margin-right: 0;
+}
+.cabecalho__menu__lista__item a {
+    color: var(--textos);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+.cabecalho__menu__lista__item a:hover {
+    color: var(--laranja);
+}
+.cabecalho__capa-apos-menu {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+    height: 100vh;
+    background-color: var(--laranja-opaco);
+    opacity: 0.5;
+    transition: all 0.5s ease;
+    transform: translateX(-500%);
+}
+.anco-possui-telefone i {
+    margin-right: 5px;
+}
+@media only screen and (max-width: 500px) {
+    .cabecalho__btn-controla-menu {
+        display: block;
+    }
+    .cabecalho__menu {
+        width: 75%;
+        background-color: #000;
+        padding: 30px 0;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 100px;
+        height: 100vh;
+        transition: all 0.5s ease;
+        transform: translateX(-100%);
+    }
+    .cabecalho__capa-apos-menu.ativo {
+        transform: translateX(0);
+    }
+    .cabecalho__menu.menu-ativo {
+        transform: translateX(0);
+    }
+    .cabecalho__menu__lista {
+        flex-direction: column;
+    }
+    .cabecalho__menu__lista__item {
+        margin: 18px 0;
+    }
+    .cabecalho__menu__lista__item a {
+        color: #fff;
+        font-size: 22px;
+    }
+}

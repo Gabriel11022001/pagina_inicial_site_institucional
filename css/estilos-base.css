@@ -1,0 +1,12 @@
+:root {
+    --textos: rgb(51, 51, 51);
+    --laranja: rgb(243, 130, 30);
+    --laranja-claro: #ffaf40;
+    --cor-fundo-secao-apresentacao: rgba(51, 51, 51, 0.6);
+    --cor-fundo-secao-sobre-nos: rgb(241, 243, 244);
+    --cor-fundo-rodape: rgb(29, 29, 29);
+    --laranja-opaco: rgba(243, 130, 30, 0.6);
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}

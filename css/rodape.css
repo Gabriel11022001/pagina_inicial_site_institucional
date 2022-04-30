@@ -1,0 +1,9 @@
+.rodape {
+    width: 100%;
+    background-color: var(--cor-fundo-rodape);
+    padding: 25px 0;
+    text-align: center;
+}
+.rodape span {
+    color: rgba(255, 255, 255, 0.9);
+}

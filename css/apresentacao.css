@@ -1,0 +1,51 @@
+.secao-apresentacao {
+    background-image: url("../imagens/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 180px 0 100px 0;
+    background-blend-mode: soft-light;
+    background-color: var(--cor-fundo-secao-apresentacao);
+}
+.secao-apresentacao__conteudo {
+    width: 50%;
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+}
+.secao-apresentacao__conteudo__titulo {
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+.secao-apresentacao__conteudo__texto-de-apresentacao {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+.secao-apresentacao__conteudo__btn-fale-conosco {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--laranja);
+    padding: 15px 25px;
+    border-radius: 25px;
+    transition: all 0.4s ease;
+}
+.secao-apresentacao__conteudo__btn-fale-conosco:hover {
+    background-color: var(--laranja-claro);
+}
+@media only screen and (max-width: 500px) {
+    .secao-apresentacao {
+        padding: 150px 0 70px 0;
+    }
+    .secao-apresentacao__conteudo {
+        width: 80%;
+    }
+}

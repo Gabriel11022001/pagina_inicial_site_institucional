@@ -1,0 +1,49 @@
+.ultimos-posts {
+    margin: 50px 0;
+}
+.ultimos-posts__titulo {
+    font-weight: bold;
+    color: var(--textos);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.ultimos-posts__lista-posts {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ultimos-posts__lista-posts__post {
+    width: 32%;
+}
+.ultimos-posts__lista-posts__post img {
+    width: 100%;
+}
+.ultimos-posts__lista-posts__post__corpo {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px;
+    background-color: var(--cor-fundo-secao-sobre-nos);
+}
+.ultimos-posts__lista-posts__post__corpo h5 {
+    color: var(--textos);
+    font-weight: bold;
+}
+.ultimos-posts__lista-posts__post__corpo p {
+    color: var(--textos);
+    line-height: 21px;
+    margin-top: 15px;
+}
+@media only screen and (max-width: 500px) {
+    .ultimos-posts__lista-posts {
+        flex-direction: column;
+    }
+    .ultimos-posts__lista-posts__post {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
